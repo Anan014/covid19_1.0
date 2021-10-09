@@ -424,6 +424,11 @@ function axesLinearChartRegion(obj) {
             scales: {
                 y: {
                     beginAtZero: true
+                },
+                x: {
+                    ticks: {
+                        autoSkip: true
+                    }
                 }
             }
         }
