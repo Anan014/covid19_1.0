@@ -160,6 +160,10 @@ body {
 
 /* country dropdown */
 
+.hide {
+    display: none;
+}
+
 .country-select {
     position: relative;
 }
@@ -207,14 +211,28 @@ body {
     opacity: 1;
 }
 
-.country-item {
+.country-select-list ul {
+    list-style-type: none;
+}
+
+.country-select-list li {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.country-select-list li:hover {
+    background-color: var(--bg-hover);
+}
+
+
+/* .country-item {
     padding: 5px 15px;
     cursor: pointer;
 }
 
 .country-item:hover {
     background-color: var(--bg-hover);
-}
+} */
 
 
 /* end country dropdown */
@@ -276,6 +294,15 @@ body {
 
 .count-death .count-info h5 {
     color: #373c43;
+}
+
+.count-critical .count-icon {
+    background-color: #ffb889;
+    color: orangered;
+}
+
+.count-critical .count-info h5 {
+    color: orangered;
 }
 
 
