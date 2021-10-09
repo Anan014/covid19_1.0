@@ -13,6 +13,7 @@ async function getData() {
     }
 }
 let data = JSON.parse(localStorage.getItem("tempStorage"));
+getData();
 
 //varibales
 const confirmed_total = document.querySelector("#confirmed-total");
@@ -69,8 +70,6 @@ const unique = (value, index, self) => {
 
 
 
-getData();
-console.log(data);
 
 
 
