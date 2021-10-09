@@ -1,8 +1,14 @@
+const loader = document.querySelector(".loader");
+
 async function getData() {
     if (!localStorage.getItem("tempStorage")) {
+        loader.style.visibility = "visible";
+        loader.style.opacity = "1";
         let data1 = await (await fetch('https://corona-api.com/countries')).json();
         // let data2 = await (await fetch('https://cors-anywhere.herokuapp.com/https://restcountries.herokuapp.com/api/v1', { mode: 'cors' })).json();
         let data2 = await (await fetch('https://raw.githubusercontent.com/Anan014/covid19_1.0/main/js/all_countries.json')).json();
+        loader.style.visibility = "hidden";
+        loader.style.opacity = "0";
         localStorage.setItem("tempStorage", JSON.stringify({ data1: data1, data2: data2 }));
     }
 }
