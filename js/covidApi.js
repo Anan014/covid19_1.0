@@ -325,10 +325,11 @@ function axesLinearChartCountry(array) {
                 label: `${array.name}`,
                 data: chartDataArray,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)'
+
+                    'rgb(253, 225, 1, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)'
+                    'rgb(253, 225, 1, 1)'
                 ],
                 borderWidth: 1
             }]
@@ -382,40 +383,40 @@ function axesLinearChartRegion(obj) {
                 label: 'Confirmed',
                 data: chartRegionAllCoumtriesListConfirmed,
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)'
+                    '#ffa0a0'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)'
+                    'red'
                 ],
                 borderWidth: 1
             }, {
                 label: 'Recovered',
                 data: chartRegionAllCoumtriesListRecovered,
                 backgroundColor: [
-                    'rgba(54, 162, 235, 0.2)'
+                    '#bffabf'
                 ],
                 borderColor: [
-                    'rgba(54, 162, 235, 1)'
+                    'green'
                 ],
                 borderWidth: 1
             }, {
                 label: 'Deaths',
                 data: chartRegionAllCoumtriesListDeaths,
                 backgroundColor: [
-                    'rgba(153, 102, 255, 0.2)'
+                    '#e2e8f0'
                 ],
                 borderColor: [
-                    'rgba(153, 102, 255, 1)'
+                    '#373c43'
                 ],
                 borderWidth: 1
             }, {
                 label: 'Critical',
                 data: chartRegionAllCoumtriesListCritical,
                 backgroundColor: [
-                    'rgba(255, 206, 86, 0.2)'
+                    '#ffb889'
                 ],
                 borderColor: [
-                    'rgba(255, 206, 86, 1)'
+                    'orangered'
                 ],
                 borderWidth: 1
             }]
